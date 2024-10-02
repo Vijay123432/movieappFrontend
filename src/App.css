@@ -1,29 +1,115 @@
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #141414;
+  color: #e5e5e5;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+
 header {
-  background-color: #282c34;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding: 20px;
+  background-color: #141414; 
   color: white;
+  border-bottom: 1px solid #333;
+}
+
+h1 {
+  padding-left: 20px;
+  padding-top: 30px;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+form {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #333;
+  color: #e5e5e5;
+  border: 1px solid #333;
+  border-radius: 4px;
+  width: 400px;
+  margin-right: 10px;
+}
+
+input[type="text"]::placeholder {
+  color: #e50914;
+}
+
+button {
+  padding: 10px 20px;
+  font-weight: 3px;
+  font-size: 16px;
+  background-color: #e50914; 
+  border: none;
+  border-radius: 4px;
+  color: rgb(5, 5, 5);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #edf5ec;
 }
 
 .main-content {
   display: flex;
   flex: 1;
+  padding: 20px;
 }
+
 
 .sidebar {
   width: 200px;
-  background-color: #f0f0f0;
+  background-color: #3f403f;
   padding: 20px;
+  color: rgb(14, 13, 13);
+  border-right: 1px solid #0e0d0d;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li a {
+  color: #faf5f5;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #e50914;
+}
+
+
 .movie-list {
+
+ color: #141414;
   flex: 1;
   padding: 20px;
+  background-color: #e4e9eb;
 }
 
 .movie-grid {
@@ -33,7 +119,7 @@ header {
 }
 
 .movie-card {
-  border: 1px solid #ddd;
+  background-color: #222;
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
@@ -46,24 +132,27 @@ header {
 .movie-card img {
   width: 100%;
   height: auto;
+  border-bottom: 2px solid #333;
 }
 
 .movie-card h3 {
   margin: 10px;
-  font-size: 1em;
+  font-size: 1.2em;
+  color: white;
 }
 
 .movie-card p {
   margin: 5px 10px;
-  font-size: 0.8em;
-  color: #666;
+  font-size: 0.9em;
+  color: #999;
+}
+.red {
+  color: red; 
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+h1 {
+  color: white; 
+  margin-bottom: 20px; 
 }
 
-li {
-  margin-bottom: 10px;
-}
+

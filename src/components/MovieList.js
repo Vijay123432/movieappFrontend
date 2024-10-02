@@ -25,7 +25,7 @@ useEffect(() => {
         {movies && movies.length > 0 ? (
           movies.map((movie) => (
             <div key={movie.id} className="movie-card">
-              <img src={'${movie.poster}'} alt={movie.title} />
+              <img src={'http://localhost:8080/' + movie.poster} alt={movie.title} />
               <h3>{movie.name}</h3>
               <p>Release Date: {movie.relesedate}</p>
               
